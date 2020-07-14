@@ -14,5 +14,7 @@ func getMax(vals ... int) int {
 
 func main(){
 	fmt.Println(getMax(1,2,3,4,5,6,7,8,9,10))
+	vslice := []int{1,2,3,4,5,6}
+	fmt.Println(getMax(vslice...))
 
 }
